@@ -1,3 +1,17 @@
+/* Flexbox testing */
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.flex-item{
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+}
+
 .header img{
     height: 50px;
     overflow: hidden;
