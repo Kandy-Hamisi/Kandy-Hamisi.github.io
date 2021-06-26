@@ -1,8 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
 /* Flexbox testing */
 .flex-container{
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
+}
+.flex-container1{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: space-between;
+}
+.flex-item1{
+  text-align: center;
 }
 .flex-item{
   padding: 5px;
@@ -11,6 +24,9 @@
   margin-top: 10px;
   line-height: 150px;
 }
+/* .flex-item1{
+  flex-grow: 4;
+} */
 
 .header img{
     height: 50px;
@@ -462,3 +478,143 @@ display: inline-block; }
   margin: 0 10px 10px 0; }
   .footer-small-nav > li a:hover, .footer-small-nav > li a:focus {
     color: #3e64ff; }
+
+.grid-projects{
+  padding: 2% 0%;
+}
+
+.project__sunny{
+  background: url(../Images/image-graphic-design.jpg) no-repeat center/cover;
+  position: relative;
+}
+/* .project__sunny:hover{
+  background: cornflowerblue, url(../Images/image-graphic-design.jpg) no-repeat center/cover;
+} */
+.project-img a{
+  text-decoration: none;
+  color: #000;
+}
+.project-img a span{
+  position: relative;
+  float: right;
+  margin-top: -15rem;
+  padding-right: 7rem;
+}
+.project-img a h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.split{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.project-img img{
+  
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  
+}
+
+.split-cont{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+@media (max-width: 699px){
+  .split-cont{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
+/* .split-cont .info-container .logo{
+  display: flex;
+  justify-content: center;
+} */
+
+.split-cont .info-container{
+  /* padding: 2em 1em 3em 1em;
+  text-align: center;
+  max-width: 20.3125em;
+  margin: 0 auto; */
+  padding: 1em 1em 1em 1em;
+  text-align: center;
+  max-width: 20.3125em;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.5s ease-in-out;
+  /* display: flex;
+  justify-content: center */
+}
+.split-cont .info-container:hover{
+  background: #34b7a7;
+  transform: scale(1.1);
+  
+}
+
+.grid-skills{
+  /* display: grid;
+  grid-template-columns: repeat(5, 1fr); */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 600px){
+  /* .grid-skills{
+    display: flex;
+    flex-flow: row wrap;
+    
+  } */
+}
+ 
+.skill-item{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 2em;
+  line-height: 2;
+}
+.skill-item span{
+  font-family: 'Patrick Hand', cursive;
+  padding: 1em 0;
+}
+
+.content-service h3{
+  line-height: 1.3;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.content-services h3::after{
+  position: absolute;
+}
+/* .services .content-services h3{
+  line-height: 1.3;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  position: relative;
+  color: #000;
+}
+.services .content-services h3:after{
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  content: '';
+  width: 30px;
+  height: 1px;
+  background: #34b7a7;
+  margin: 0 auto;
+} */
