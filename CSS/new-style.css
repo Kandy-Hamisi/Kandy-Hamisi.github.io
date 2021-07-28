@@ -30,7 +30,7 @@ ul{
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 img{
@@ -399,4 +399,177 @@ img{
 .btn-hire{
     background: var(--fnt-primary-300);
     color: var(--fnt-primary-200);
+}
+
+
+/* project count section */
+.project-count{
+    padding: 3rem 0;
+}
+
+.split-project__count{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-count, .contact-box{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    padding: 30px 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.project-count-num{
+    color: var(--fnt-secondary-500);
+    font-weight: 700;
+    font-family: var(--fnt-family-pat);
+}
+
+.project-count-purpose{
+    color: var(--fnt-secondary-600);
+    font-weight: 700;
+    font-family: var(--fnt-family-300);
+}
+
+/* contact section css */
+
+.contact-box{
+    width: 100%;
+    display: block;
+}
+
+.icon{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, var(--fnt-secondary-400), var(--fnt-secondary-500)) ;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 50% 50% 50% 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.split-contacts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.contact-box .icon span{
+    color: #fff;
+    font-size: 30px;
+}
+
+.contact-box__info{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: var(--fnt-family-pat);
+    color: var(--fnt-secondary-600);
+}
+
+.contact-box__info a{
+    color: var(--fnt-secondary-600) !important;
+    text-decoration: none;
+}
+
+.contact-box__info a:hover{
+    color: var(--fnt-secondary-500);
+    transition: all 0.6s ease;
+}
+
+.contact-box__info > p{
+    padding-top: 1em 0;
+}
+
+.form-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 3rem 0;
+}
+
+.form-div{
+    background: var(--fnt-primary-300);
+}
+
+.form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.btn-send-mail{
+    padding: 20px 10px;
+    background: var(--fnt-secondary-600);
+    color: var(--fnt-secondary-400);
+    font-family: var(--fnt-family-pat);
+}
+
+/* footer section css */
+.footer-section{
+    padding: 3rem 0;
+    background: var(--fnt-primary-200);
+}
+
+.footer-section .title{
+    color: var(--fnt-secondary-400) !important;
+    font-size: 20px;
+}
+
+.about-me__info{
+    color: var(--fnt-primary-300);
+    line-height: 2em;
+    padding: 1em 0;
+}
+
+.split-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.social-links__list{
+    display: flex;
+}
+
+.social-links__list > *{
+    padding-right: 10px;
+}
+
+.social-links__list li a{
+    height: 50px;
+    width: 50px;
+    display: block;
+    float: left;
+    background: var(--fnt-primary-300);
+    border-radius: 50%;
+    position: relative;
+}
+
+.social-links__list li a span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+    color: var(--fnt-primary-200);
+}
+
+.social-links__list li a span:hover{
+    color: var(--fnt-secondary-500);
+}
+
+.services-list ul li a, .faq-div ul li a, .faq-div ul li span, .links ul li a{
+    color: var(--fnt-primary-300);
+    padding: 1em 0;
+    line-height: 2.5em;
+}
+
+.faq-div ul li a{
+    margin-right: 10px;
 }
