@@ -16,3 +16,28 @@ $(document).ready(function(){
         zIndex: '50'
     });
 });
+
+
+// const projectDiv = document.querySelector('.project-img');
+// const mainProject = document.querySelector('.project-img a');
+
+// let showProject = false;
+
+
+// projectDiv.addEventListener('onmouseover', toggleProject);
+
+// function toggleProject(e){
+//     if (!showProject) {
+//         mainProject.classList.add('show');
+//         showProject = true;
+//     }else{
+//         mainProject.classList.remove('show');
+//         showProject = false;
+//     }
+
+//     e.preventDefault();
+// }
+
+// mainProject.onclick = ()=> {
+//     alert();
+// }
