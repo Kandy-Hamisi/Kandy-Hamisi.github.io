@@ -27,15 +27,23 @@ $(document).ready(function(){
     }),$(".project__sunny").mouseout(function(){
         $(".project__sunny a").removeClass("show");
     });
+
     $(".project__rubi").mouseover(function(){
         $(".project__rubi a").addClass("show");
     }),$(".project__rubi").mouseout(function(){
         $(".project__rubi a").removeClass("show");
     });
+
     $(".project__bachem").mouseover(function(){
         $(".project__bachem a").addClass("show");
     }),$(".project__bachem").mouseout(function(){
         $(".project__bachem a").removeClass("show");
+    });
+
+    $(".project__travel").mouseover(function(){
+        $(".project__travel a").addClass("show");
+    }),$(".project__travel").mouseout(function(){
+        $(".project__travel a").removeClass("show");
     });
 });
 

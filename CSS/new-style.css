@@ -376,6 +376,10 @@ img{
     visibility: visible;
 }
 
+.project__travel a.show{
+    visibility: visible;
+}
+
 /* hire me section */
 .hire-me__section{
     padding: 3rem 0;
