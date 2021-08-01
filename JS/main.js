@@ -45,6 +45,12 @@ $(document).ready(function(){
     }),$(".project__travel").mouseout(function(){
         $(".project__travel a").removeClass("show");
     });
+
+    $(".project__mku").mouseover(function(){
+        $(".project__mku a").addClass("show");
+    }),$(".project__mku").mouseout(function(){
+        $(".project__mku a").removeClass("show");
+    });
 });
 
 
