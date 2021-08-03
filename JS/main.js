@@ -51,6 +51,12 @@ $(document).ready(function(){
     }),$(".project__mku").mouseout(function(){
         $(".project__mku a").removeClass("show");
     });
+
+    $(".project__witch").mouseover(function(){
+        $(".project__witch a").addClass("show");
+    }),$(".project__witch").mouseout(function(){
+        $(".project__witch a").removeClass("show");
+    });
 });
 
 
