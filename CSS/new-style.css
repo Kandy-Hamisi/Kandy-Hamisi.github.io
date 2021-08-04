@@ -442,6 +442,10 @@ img{
     visibility: visible;
 }
 
+.project__witch a.show{
+    visibility: visible;
+}
+
 @media (max-width: 699px){
     .split-projects{
         display: grid;
