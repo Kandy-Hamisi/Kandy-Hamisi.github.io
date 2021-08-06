@@ -57,6 +57,12 @@ $(document).ready(function(){
     }),$(".project__witch").mouseout(function(){
         $(".project__witch a").removeClass("show");
     });
+
+    $(".project__recipe").mouseover(function(){
+        $(".project__recipe a").addClass("show");
+    }),$(".project__recipe").mouseout(function(){
+        $(".project__recipe a").removeClass("show");
+    });
 });
 
 
