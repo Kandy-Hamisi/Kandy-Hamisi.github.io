@@ -461,12 +461,12 @@ img{
     }
 }
 
-@media (max-height: 650px){
+/* @media (max-height: 650px and ){
     .split-projects{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-}
+} */
 /* hire me section */
 .hire-me__section{
     padding: 3rem 0;
